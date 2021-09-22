@@ -1,0 +1,14 @@
+.cell {
+    background-color: white;
+}
+
+.grid {
+    width: 30vw;
+    height: 30vw;
+    margin: auto;
+    border-radius: 10%;
+}
+
+.background {
+    background-color: black;
+}
