@@ -1,14 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .cell {
     background-color: white;
 }
 
 .grid {
-    width: 30vw;
-    height: 30vw;
+    width: 500px;
+    height: 500px;
     margin: auto;
-    border-radius: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c5c5c5;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.background {
-    background-color: black;
+#clear {
+    background-color: #2df56d;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 10pt;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #c5c5c5;
+    padding: 10px;
+    margin: 0px 50px 0px 0px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.gridline {
+    background-color: #11538c;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 10pt;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.colormenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #ABABAB;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#random {
+    background-color: #11538c;
+    background: -webkit-linear-gradient(left, cyan, blue, violet);
+    background: -o-linear-gradient(right, cyan, blue, violet);
+    background: -moz-linear-gradient(right, cyan, blue, violet);
+    background: linear-gradient(to right, cyan, blue, violet);
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 10pt;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+}
+
+#demo {
+    margin: 0px 0px 10px 0px;
+    padding: 2px 2px 2px 2px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#pixelSlider {
+    outline: none;
+    appearance: none;
+    background: #ABABAB;
+    height: 5px;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity .2s;
+    margin: 0px 0px 10px 0px;
+    cursor: pointer;
+}
+
+#pixelSlider:hover {
+    opacity: 1;
+}
+
+#pixelSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#pixelSlider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+#eraser {
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    color: black;
+    font-size: 10pt;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+#header {
+    text-align: center;
+    font-size: 30pt;
+}
+
+#colorpicker {
+    background: none;
+    width: 50px;
+    height: 50px;
+    border-style: none;
 }

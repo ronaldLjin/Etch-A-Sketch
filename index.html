@@ -8,13 +8,27 @@
 </head>
 
 <body>
-    <div class="background">
-        <div id="grid" class='grid'></div>
+    <h1 id="header">
+        Etch-A-Sketch
+    </h1>
+    <div class="menu">
+
+        <div class="options">
+            <button type="button" id="clear">Clear</button>
+            <button type="button" class="gridline"></button>
+            <input type="range" min="1" max="50" value="16" class="slider" id="pixelSlider">
+            <output id="demo">25 x 25</output>
+            <div class="colormenu">
+                <p class="title">Brush Style</p>
+                <input type="color" id="colorpicker" value=#000000>
+                <button type="button" id="random">Random</button>
+                <button type="button" id="eraser">Eraser</button>
+            </div>
+        </div>
+        <div>
+            <div id="grid" class='grid'></div>
+        </div>
     </div>
-    <button type="button" class="gridline"></button>
-    <input type="color" id="colorpicker" value="#000000">
-    <input type="range" min="1" max="100" value="16" class="slider" id="pixelSlider">
-    <button type="button" id="clear">Clear</button>
 </body>
 
 
