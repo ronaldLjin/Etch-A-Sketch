@@ -38,10 +38,7 @@ function gridSize(width) {
 
     random.addEventListener("click", () => {
         for (i = 0; i < gridSquare.length; i++) {
-            gridSquare[i].addEventListener("mouseover", () => {
-                randomColor = Math.floor(Math.random() * 16777215).toString(16);
-                cellColor = '#' + randomColor;
-            })
+            gridSquare[i].addEventListener("mouseover", createRandomColor);
         }
     })
 
@@ -55,6 +52,7 @@ function gridSize(width) {
 
     function functionOne() {
         cellColor = 'white';
+        removeRandomColorForAllCells();
     }
 }
 
@@ -64,8 +62,21 @@ clear.addEventListener("click", () => {
     }
 })
 
+function removeRandomColorForAllCells() {
+    for (i = 0; i < gridSquare.length; i++) {
+        gridSquare[i].removeEventListener("mouseover", createRandomColor);
+    }
+}
+
+function createRandomColor() {
+    randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    cellColor = '#' + randomColor
+}
+
+
 function watchColorPicker(event) {
     cellColor = event.target.value;
+    removeRandomColorForAllCells();
 }
 
 function startup() {
