@@ -119,6 +119,7 @@ body {
     font-size: 10pt;
     margin: 0px 0px 0px 0px;
     cursor: pointer;
+    background-color: white;
 }
 
 #header {
