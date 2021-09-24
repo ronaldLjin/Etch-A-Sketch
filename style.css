@@ -154,3 +154,8 @@ body {
 .active {
     filter: brightness(0.8);
 }
+
+footer {
+    font-size: 10pt;
+    text-align: center;
+}
