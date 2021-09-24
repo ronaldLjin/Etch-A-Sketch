@@ -40,6 +40,8 @@ function gridSize(width) {
         for (i = 0; i < gridSquare.length; i++) {
             gridSquare[i].addEventListener("mouseover", createRandomColor);
         }
+        eraser.classList.remove('active')
+        random.classList.add('active')
     })
 
     function changeColor(i) {
@@ -52,6 +54,8 @@ function gridSize(width) {
 
     function functionOne() {
         cellColor = 'white';
+        eraser.classList.add('active')
+        random.classList.remove('active')
         removeRandomColorForAllCells();
     }
 }

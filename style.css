@@ -135,6 +135,8 @@ body {
 
 .button:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transform: scale(1.03);
+    transition: transform .2s;
 }
 
 @media (max-width: 550px) {
@@ -146,4 +148,8 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.active {
+    filter: brightness(0.8);
 }
