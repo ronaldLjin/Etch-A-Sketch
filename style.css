@@ -44,6 +44,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
+@media (max-width: 810px) {
+    .options {
+        margin: 10px;
+    }
+}
+
 .gridline {
     background-color: #11538c;
     border-style: none;
@@ -140,10 +146,10 @@ body {
     transition: transform .2s;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 480px) {
     .grid {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     .menu {
         flex-direction: column;
